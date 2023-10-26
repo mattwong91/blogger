@@ -1,11 +1,11 @@
 <template>
   <div class="container-fluid">
-    <section class="row">
+    <section class="row justify-content-center">
       <div class="col-12 d-flex align-items-center p-2">
         <p>New Post</p>
         <button data-bs-toggle="modal" data-bs-target="#newBlogModal" class="btn btn-outline-primary ms-2">+</button>
       </div>
-      <div v-for="blog in blogs" :key="blog.id" class="col-12 p-4">
+      <div v-for="blog in blogs" :key="blog.id" class="col-8 p-4">
         <BlogCard :blog="blog" />
       </div>
     </section>

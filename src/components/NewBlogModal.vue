@@ -39,6 +39,7 @@ export default {
           const blogData = form.value
           await blogsService.createBlog(blogData)
           Modal.getOrCreateInstance('#newBlogModal').hide()
+          Pop.success('Created Blog Post!')
         }
         catch (error) {
           Pop.error(error)
