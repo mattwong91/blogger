@@ -2,10 +2,10 @@
   <div class="container-fluid">
     <section class="row p-3">
       <div class="col-4">
-        <img class="profile-img" :src="profile.picture" :alt="profile.name">
+        <img class="profile-img" :src="profile?.picture" :alt="profile?.name">
       </div>
       <div class="col-8">
-        <h1>{{ profile.name }}</h1>
+        <h1>{{ profile?.name }}</h1>
 
       </div>
     </section>
